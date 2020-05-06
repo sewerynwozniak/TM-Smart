@@ -9,12 +9,12 @@
     'Reply-To: no-reply' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
-    ///$mailTo = "sewerynwozniak111@gmail.com";
+    $mailTo = "tmsmartbiuro@gmail.com";
     $subject = "Wiadomośc ze strony TM Smart";
     $txt = "Imie: ".$name."\n"."Email: ".$email."\n"."Numer telefonu: ".$phoneNumber."\n\n\n".$message;
 
 
-    mail($mailTo, $subject, $txt);
+    mail($mailTo, $subject, $txt, $headers);
     
 
 
